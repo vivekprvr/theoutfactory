@@ -1012,6 +1012,13 @@ h3 {
   grid-area: 2/5/4/7;
 }
 
+.section-2-carousel .carousel-item div {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .section-3 {
   background: var(--primary);
 }
