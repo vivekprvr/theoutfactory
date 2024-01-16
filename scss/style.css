@@ -930,7 +930,7 @@ h3 {
   height: calc(100vh - var(--h-main-header));
   align-items: end;
   min-height: 400px;
-  background: url("../../img/outfactory-web-banner.png");
+  background: url("../img/outfactory-web-banner.png");
   align-content: end;
   padding-bottom: 100px;
 }
@@ -1110,7 +1110,7 @@ h3 {
 
 .section-5 {
   height: 800px;
-  background: url(../../img/outfactory-bottom-section.png) no-repeat;
+  background: url(../img/outfactory-bottom-section.png) no-repeat;
   background-size: cover;
 }
 
