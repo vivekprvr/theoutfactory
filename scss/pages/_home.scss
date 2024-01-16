@@ -183,6 +183,10 @@
 
     h2 {
         color: var(--primary);
+        padding: var(--xl-padding);
+        max-width: 950px;
+        width: 100%;
+        margin: auto;
     }
 }
 
@@ -200,6 +204,7 @@
     color: var(--primary);
     display: grid;
     align-items: center;
+    padding: 56px;
 }
 
 .carousel-text {
@@ -257,7 +262,7 @@
     display: grid;
     grid-template-columns: 1fr auto auto auto;
     gap: 24px;
-    align-items: start;
+    align-items: center;
 }
 
 .f-logo {
@@ -343,6 +348,40 @@
     .carousel-layout {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 300px 400px;
+        grid-template-rows: 300px 350px;
     }
+
+    .section-4 {
+        min-height: inherit;
+    }
+
+    .carousel-content {
+        padding: 24px;
+    }
+
+    .section-5 {
+        height: 400px;
+    }
+
+    .bb-1 {
+        font-size: clamp(6rem, -11.313rem + 45.8015vw, 16rem);
+        line-height: 100%;
+    }
+
+    .bb-2 {
+        font-size: clamp(2.5rem, -2.3654rem + 10.7692vw, 6.25rem);
+        line-height: 125%;
+    }
+}
+
+
+.heading-w-900 {
+    max-width: 900px;
+    width: 100%;
+}
+
+.heading-w-600 {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
 }
