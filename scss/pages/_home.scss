@@ -1,0 +1,348 @@
+:root {
+  --h-main-header: 90px;
+  --p-main-header: 48px;
+
+  --xl-padding: 48px;
+
+  --dark: #221c0c;
+  --white: #fff;
+  --primary: #FEFAE1;
+  --on-primary: #423D31;
+}
+
+@mixin to-rem($property, $value) {
+  #{$property}: $value / 16 + rem;
+}
+
+// layout
+
+.main-top-header {
+  height: var(--h-main-header);
+  width: 100%;
+  padding: 8px var(--p-main-header);
+  background: var(--dark);
+}
+
+.home-banner {
+  display: grid;
+  height: calc(100vh - var(--h-main-header));
+  align-items: end;
+  min-height: 400px;
+  background: url("../../img/outfactory-web-banner.png");
+  align-content: end;
+  padding-bottom: 100px;
+}
+
+.hb-heading {
+    display: grid;
+    grid-auto-flow: column;
+    font-family: "Playfair Display", serif;
+    justify-content: start;
+    justify-items: start;
+    align-items: end;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.hb-1 {
+    font-size: clamp(3rem, -11.313rem + 45.8015vw, 18rem);
+    line-height: clamp(3rem, -9.6431rem + 40.458vw, 16.25rem);
+}
+
+.hb-2 {
+    font-size: clamp(2.75rem, -1.3053rem + 12.9771vw, 7rem);
+    line-height: clamp(2.75rem, -1.3053rem + 12.9771vw, 7rem);
+}
+
+// section 2
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 2fr 1fr 2fr;
+    gap: clamp(0.5rem, -0.4615rem + 3.0769vw, 2rem);
+
+    > * {
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        background-position: 50% 50%;
+    }
+}
+
+.bg-1 {
+    grid-area: 1/1/2/2;
+}
+
+.bg-2 {
+    grid-area: 1/2/3/4;
+}
+
+.bg-3 {
+    grid-area: 1/4/2/6;
+}
+
+.bg-4 {
+    grid-area: 1/6/2/7;
+}
+
+.bg-5 {
+    grid-area: 2/1/3/2;
+}
+
+.bg-6 {
+    grid-area: 2/4/3/5;
+}
+
+.bg-7 {
+    grid-area: 3/1/4/3;
+}
+
+.bg-8 {
+    grid-area: 3/3/4/5;
+}
+
+.bg-9 {
+    grid-area: 2/5/4/7;
+}
+
+
+// section 3
+
+.section-3 {
+    background: var(--primary);
+}
+
+.price-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+    gap: 8px;
+    justify-content: center;
+}
+
+.price-box {
+    background: var(--on-primary);
+    border-radius: 1rem;
+    color: var(--primary);
+    font-family: "Myriad Pro Condensed", serif;
+    padding: 1.5rem 2rem;
+
+    h2 {
+        font-family: "Myriad Pro Bold Condensed", serif;
+    }
+}
+
+.price-items h3:nth-child(2n-1){
+    font-family: "Myriad Pro Bold Condensed", serif;
+}
+
+.inc-exc-items {
+    font-size: clamp(1rem, 0.0769rem + 2.1538vw, 1.8rem);
+    font-family: 'Myriad Pro Condensed';
+    line-height: 110%;
+    display: grid;
+    gap: 16px;
+}
+
+.inc-exc-right {
+    border-left: 1px solid var(--on-primary);
+}
+
+.video-section-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    justify-content: center;
+    justify-items: center;
+}
+
+.video-section {
+    grid-area: 1/1/3/1;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+}
+
+.video-inner-container {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    padding: 0 var(--xl-padding);
+}
+
+.video-section-bg {
+    grid-area: 2/1/3/1;
+    background: var(--on-primary);
+    width: 100%;
+}
+
+.video-section-content {
+    grid-area: 3/1/4/1;
+    background: var(--on-primary);
+    width: 100%;
+
+    h2 {
+        color: var(--primary);
+    }
+}
+
+// section-4
+
+.section-4 {
+    background: var(--primary);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.carousel-content {
+    background: var(--on-primary);
+    color: var(--primary);
+    display: grid;
+    align-items: center;
+}
+
+.carousel-text {
+    max-width: 600px;
+    width: 100%;
+}
+
+.carousel-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    div {
+        background-size: cover;
+    }
+}
+
+// section-5
+
+.section-5 {
+    height: 800px;
+    background: url(../../img/outfactory-bottom-section.png) no-repeat;
+    background-size: cover;
+}
+
+.bottom-banner {
+    display: grid;
+    align-content: end;
+    align-items: end;
+    height: 100%;
+}
+
+
+.bb-1 {
+    font-size: clamp(3rem, -11.313rem + 45.8015vw, 16rem);
+    line-height: clamp(3rem, -9.6431rem + 40.458vw, 16.25rem);
+    -webkit-text-stroke: 2px var(--primary);
+    color: transparent;
+}
+
+.bb-2 {
+    font-size: clamp(1rem, -2.3654rem + 10.7692vw, 6.25rem);
+    line-height: 125%;
+    color: var(--primary);
+}
+
+// footer
+
+.main-footer {
+    padding: var(--xl-padding) 0;
+    font-family: 'Myriad Pro Condensed';
+    font-size: clamp(1rem, 0.8397rem + 0.5128vw, 1.25rem);
+}
+
+.mf-content {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    gap: 24px;
+    align-items: start;
+}
+
+.f-logo {
+    width: 100px;
+}
+
+.f-address {
+    max-width: 300px;
+    width: 100%;
+}
+
+.social-btns {
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    background: #353535;
+    display: grid;
+    place-content: center;
+
+    &:hover {
+        background: #000;
+    }
+}
+
+.border-right {
+    padding-right: 30px;
+    border-right: 1px solid #E6D0B9;
+}
+
+
+// landscape phones
+
+.show-on-mobile {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .mf-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .border-right {
+        padding-right: 0;
+        border-right: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hb-heading {
+        grid-auto-flow: inherit;
+    }
+
+    .hb-1 {
+        font-size: 10rem;
+        line-height: 10rem;
+    }
+
+    .mf-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    :root {
+        --h-main-header: 90px;
+        --p-main-header: 24px;
+
+        --xl-padding: 24px;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: grid;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        display: none;
+    }
+
+    .carousel-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 400px;
+    }
+}
