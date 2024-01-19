@@ -15,13 +15,17 @@
     <link rel="stylesheet" href="scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="all-wrapper">
         <header class="main-top-header">
-            <img src="img/theoutfactory-logo.svg" alt="theoutfactory logo">
+            <a href="https://theoutfactory.com/" target="_blank">
+                <img src="img/theoutfactory-logo.svg" alt="theoutfactory logo">
+            </a>
         </header>
 
         <section class="home-banner">
@@ -403,9 +407,9 @@
 
         <footer class="main-footer">
             <div class="container-xl mf-content">
-                <div class="f-logo">
+                <a class="f-logo" href="https://theoutfactory.com/" target="_blank">
                     <img src="img/theoutfactorylogo.svg" alt="">
-                </div>
+                </a>
                 <div class="f-address border-right">
                     <p>
                         Factory: #1, 2nd Main, A Cross, Brindavan Garden,
@@ -455,24 +459,48 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script>
-  $('.owl-carousel1,.owl-carousel2').owlCarousel({
-    loop: true,
-    margin: 0,
-    nav: true,
-    width: '100%', // Set width to 100% for full width
-    responsive:{
-        0:{
-            items:1,
-            nav:false,
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-})
+
+        $(document).ready(function () {
+
+
+            $('.owl-carousel1,.owl-carousel2').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                width: '100%', // Set width to 100% for full width
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false,
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+
+            $('.owl-carousel2').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                width: '100%', // Set width to 100% for full width
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false,
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+        });
     </script>
 </body>
 
