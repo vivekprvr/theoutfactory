@@ -135,22 +135,30 @@
     background: var(--on-primary);
     border-radius: 1rem;
     color: var(--primary);
-    font-family: "Myriad Pro Condensed", serif;
+    font-family: 'Inter Tight', sans-serif;;
     padding: 1.5rem 2rem;
 
     h2 {
-        font-family: "Myriad Pro Bold Condensed", serif;
+        font-family: 'Inter Tight', sans-serif;
+        font-weight: 700;
+        font-size: clamp(1.3rem, 0.425rem + 2.8vw, 2rem);
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: clamp(1.3rem, 1.425rem + -0.4vw, 1.2rem);
     }
 }
 
 .price-items h3:nth-child(2n-1){
-    font-family: "Myriad Pro Bold Condensed", serif;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 700;
 }
 
 .inc-exc-items {
-    font-size: clamp(1rem, 0.0769rem + 2.1538vw, 1.8rem);
-    font-family: 'Myriad Pro Condensed';
-    line-height: 110%;
+    font-size: clamp(1rem, 0.75rem + 0.8vw, 1.2rem);
+    font-family: 'Inter Tight', sans-serif;
+    line-height: 150%;
     display: grid;
     gap: 16px;
 }
@@ -226,10 +234,23 @@
 .carousel-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 760px;
 
     div {
         background-size: cover;
     }
+}
+
+.oc-img-height {
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.oc-outer {
+    width: 100vw;
+    overflow: hidden;
 }
 
 // section-5
@@ -238,6 +259,7 @@
     height: 800px;
     background: url(../img/outfactory-bottom-section.png) no-repeat;
     background-size: cover;
+    background-position: center right;
 }
 
 .bottom-banner {
@@ -265,8 +287,8 @@
 
 .main-footer {
     padding: var(--xl-padding) 0;
-    font-family: 'Myriad Pro Condensed';
-    font-size: clamp(1rem, 0.8397rem + 0.5128vw, 1.25rem);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: clamp(0.8rem, 0.55rem + 0.8vw, 1rem);
 }
 
 .mf-content {
@@ -360,6 +382,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 300px 350px;
+        height: inherit;
     }
 
     .section-4 {
