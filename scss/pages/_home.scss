@@ -28,9 +28,11 @@
   height: calc(100vh - var(--h-main-header));
   align-items: end;
   min-height: 400px;
-  background: url("../img/outfactory-web-banner.png");
+  background-image: url("../img/outfactory-web-banner.png");
   align-content: end;
   padding-bottom: 100px;
+  background-position: center;
+  background-size: cover;
 }
 
 .hb-heading {
@@ -410,6 +412,10 @@
     h2 {
         font-size: clamp(1.5rem, -0.2821rem + 4.1026vw, 3rem);
         line-height: 136%;
+    }
+
+    .home-banner {
+        background-image: url("../img/outfactory-mob-banner.png");
     }
 }
 
