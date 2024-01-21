@@ -20,6 +20,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: "Inter Tight", sans-serif;
 }
 
 /*
@@ -376,6 +377,18 @@ h3 {
 .fw-bold-myriad {
   font-family: "Inter Tight", sans-serif;
   font-weight: 700;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.primary-link {
+  color: var(--primary);
+  cursor: pointer;
+}
+.primary-link:hover {
+  opacity: 0.9;
 }
 
 .img-fluid {
@@ -932,7 +945,7 @@ h3 {
   height: calc(100vh - var(--h-main-header));
   align-items: end;
   min-height: 400px;
-  background-image: url("../img/outfactory-web-banner.png");
+  background-image: url("../img/outfactory-web-banner.jpg");
   align-content: end;
   padding-bottom: 100px;
   background-position: center;
@@ -1144,9 +1157,22 @@ h3 {
   overflow: hidden;
 }
 
+.carousel-last-slide-text {
+  font-size: clamp(1.5rem, 0.25rem + 4vw, 2.5rem);
+  color: var(--primary);
+}
+
+.carousel-last-slide-text-link {
+  color: var(--primary);
+  cursor: pointer;
+}
+.carousel-last-slide-text-link:hover {
+  opacity: 0.9;
+}
+
 .section-5 {
   height: 800px;
-  background: url(../img/outfactory-bottom-section.png) no-repeat;
+  background: url(../img/outfactory-bottom-section.jpg) no-repeat;
   background-size: cover;
   background-position: center right;
 }
@@ -1278,7 +1304,7 @@ h3 {
     line-height: 136%;
   }
   .home-banner {
-    background-image: url("../img/outfactory-mob-banner.png");
+    background-image: url("../img/outfactory-mob-banner.jpg");
   }
 }
 .heading-w-900 {
@@ -1498,7 +1524,7 @@ h3 {
   top: 50%;
   margin-left: -40px;
   margin-top: -40px;
-  background: url("owl.video.play.png") no-repeat;
+  background: url("owl.video.play.jpg") no-repeat;
   cursor: poInter Tight;
   z-index: 1;
   -webkit-backface-visibility: hidden;
@@ -1602,6 +1628,7 @@ h3 {
   height: 40px;
   width: 40px;
   border-radius: 100px !important;
+  cursor: pointer;
 }
 .owl-carousel .owl-nav button span {
   color: #fff;

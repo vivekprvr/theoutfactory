@@ -108,6 +108,18 @@ h3 {
 	font-weight: 700;
 }
 
+.text-primary {
+	color: var(--primary);
+}
+
+.primary-link {
+	color: var(--primary);
+	cursor: pointer;
+	&:hover {
+		opacity: .9;
+	}
+}
+
 // img
 
 .img-fluid {

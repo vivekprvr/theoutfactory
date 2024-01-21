@@ -211,7 +211,7 @@
   top: 50%;
   margin-left: -40px;
   margin-top: -40px;
-  background: url("owl.video.play.png") no-repeat;
+  background: url("owl.video.play.jpg") no-repeat;
   cursor: poInter Tight;
   z-index: 1;
   -webkit-backface-visibility: hidden;
@@ -318,6 +318,7 @@
       height: 40px;
       width: 40px;
       border-radius: 100px !important;
+      cursor: pointer;
 
       span {
         color: #fff;

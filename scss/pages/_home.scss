@@ -28,7 +28,7 @@
   height: calc(100vh - var(--h-main-header));
   align-items: end;
   min-height: 400px;
-  background-image: url("../img/outfactory-web-banner.png");
+  background-image: url("../img/outfactory-web-banner.jpg");
   align-content: end;
   padding-bottom: 100px;
   background-position: center;
@@ -255,11 +255,24 @@
     overflow: hidden;
 }
 
+.carousel-last-slide-text {
+    font-size: clamp(1.5rem, 0.25rem + 4vw, 2.5rem);
+    color: var(--primary);
+}
+
+.carousel-last-slide-text-link {
+   color: var(--primary);
+    cursor: pointer;
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
 // section-5
 
 .section-5 {
     height: 800px;
-    background: url(../img/outfactory-bottom-section.png) no-repeat;
+    background: url(../img/outfactory-bottom-section.jpg) no-repeat;
     background-size: cover;
     background-position: center right;
 }
@@ -415,7 +428,7 @@
     }
 
     .home-banner {
-        background-image: url("../img/outfactory-mob-banner.png");
+        background-image: url("../img/outfactory-mob-banner.jpg");
     }
 }
 
