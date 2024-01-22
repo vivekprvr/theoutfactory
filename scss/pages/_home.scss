@@ -345,6 +345,10 @@
     border-right: 1px solid #E6D0B9;
 }
 
+.f-contact {
+    color: var(--on-primary);
+    text-decoration: none;
+}
 
 // landscape phones
 
@@ -355,7 +359,8 @@
 @media (max-width: 1200px) {
     .mf-content {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        align-items: start;
     }
 
     .border-right {
@@ -372,11 +377,6 @@
     .hb-1 {
         font-size: 10rem;
         line-height: 10rem;
-    }
-
-    .mf-content {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
     }
 
     :root {
@@ -433,14 +433,34 @@
     }
 }
 
+@media (max-width: 560px) {
+    .mf-content {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto auto auto;
+    }
 
-.heading-w-900 {
-    max-width: 900px;
-    width: 100%;
+    .f-logo {
+        grid-area: 1/1/3/1;
+    }
+
+    .f-address {
+        grid-area: 3/1/4/3;
+        max-width: inherit;
+    }
 }
 
-.heading-w-600 {
-    max-width: 600px;
-    width: 100%;
-    margin: 0 auto;
+@media (max-width: 380px) {
+    .mf-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .f-logo {
+        grid-area: inherit;
+    }
+
+    .f-address {
+        grid-area: inherit;
+        max-width: inherit;
+    }
 }
