@@ -128,7 +128,7 @@
 
 .price-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 400px));
     gap: 8px;
     justify-content: center;
 }
@@ -209,6 +209,11 @@
         width: 100%;
         margin: auto;
     }
+}
+
+.sub-text-heading {
+    font-size: clamp(1rem, 0.375rem + 2vw, 1.5rem);
+    font-family: "Playfair Display", serif;
 }
 
 // section-4
@@ -425,10 +430,6 @@
     h2 {
         font-size: clamp(1.5rem, -0.2821rem + 4.1026vw, 3rem);
         line-height: 136%;
-    }
-
-    .home-banner {
-        background-image: url("../img/outfactory-mob-banner.jpg");
     }
 }
 
